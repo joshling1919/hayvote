@@ -19,6 +19,7 @@ defmodule HayvoteWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    resources "/polls", PollController
   end
 
   # Other scopes may use custom stacks.

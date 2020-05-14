@@ -6,6 +6,8 @@ defmodule Hayvote.Poll do
     field :closed, :boolean, default: false
     field :title, :string
 
+     has_many :entries, Hayvote.Entry, on_delete: :delete_all
+
     timestamps()
   end
 
